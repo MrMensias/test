@@ -27,3 +27,49 @@ No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   chapter1.txt
+
+carlosmensiasjr@MacBook-Pro-de-Carlos-2 Story % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2.txt
+        chapter3.txt
+        process.txt
+
+carlosmensiasjr@MacBook-Pro-de-Carlos-2 Story % git add .
+carlosmensiasjr@MacBook-Pro-de-Carlos-2 Story % git commit -m "Complete chapter 1,2 & 3"
+[main (root-commit) 2c104f8] Complete chapter 1,2 & 3
+ 4 files changed, 30 insertions(+)
+ create mode 100644 chapter1.txt
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+ create mode 100644 process.txt
+carlosmensiasjr@MacBook-Pro-de-Carlos-2 Story % git log
+commit 2c104f8a2dc90351fd24900d4170f19da564625f (HEAD -> main)
+Author: MrMensias <82549406+MrMensias@users.noreply.github.com>
+Date:   Fri Oct 13 20:43:19 2023 -0500
+
+    Complete chapter 1,2 & 3
+
+carlosmensiasjr@MacBook-Pro-de-Carlos-2 Story % 
+
+carlosmensiasjr@MacBook-Pro-de-Carlos-2 Story % git remote add origin https://github.com/MrMensias/test.git
+
+carlosmensiasjr@MacBook-Pro-de-Carlos-2 Story % git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 682 bytes | 682.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MrMensias/test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+carlosmensiasjr@MacBook-Pro-de-Carlos-2 Story % 
